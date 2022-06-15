@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("img/pexels-nick-rtr-3187173.jpg");
+    background-repeat: repeat;
+    height: 100vh;
+    background-size: cover;
+    color: #ffffff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 10px;
+}
+
+p {
+    padding: 5px;
+}
+.big-container {
+    min-width: 200px;
+    width: 350px;
+    min-height: 320px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: bold;
+    color: #daa520;
+}
+.small-container {
+    width: 100%;
+    min-height: 320px;
+    background-color: #13661a;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    color: #daa520;
+    border-radius: 10px;
+}
+
+.message-container {
+    margin: 20px;
+}
+
+.btn-container {
+    margin-top: 30px;
+}
+
+.btn {
+    padding: 8px;
+    border: none;
+    border-radius: 2px;
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 5px;
+    background: #b8860b;
+    color: #13661a;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.btn:hover {
+    background-color: #daa520;
+    cursor: pointer;
+}
+
+.rules-text-container {
+
+}
+
+.rules-text {
+
+}
+
+.rules-container {
+display: none;
+}
+
+.rules {
+
+}
