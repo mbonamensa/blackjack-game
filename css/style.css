@@ -5,13 +5,14 @@
 }
 
 body {
-    background: url("img/pexels-nick-rtr-3187173.jpg");
+    background: url("/img/bg-img.jpg");
+    background-color: #61702b;
     background-repeat: repeat;
     height: 100vh;
     background-size: cover;
     color: #ffffff;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding: 10px;
+    overflow: hidden;
 }
 
 p {
@@ -68,18 +69,72 @@ p {
     cursor: pointer;
 }
 
-.rules-text-container {
-
+.prize {
+    margin: 15px;
+    visibility: hidden;
 }
 
-.rules-text {
-
+.overlay {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.7;
 }
 
 .rules-container {
-display: none;
+    display: none;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #848b17;
+    text-align: justify;
+    border-radius: 10px;
+    color: #006400;
+}
+
+.game-rules {
+    padding: 15px;
+}
+.close-btn {
+    text-align: right;
+    margin: 10px 15px 10px 0;
+    font-size: 18px;
+    font-family: cursive;
+    cursor: pointer;
+    color: #000000;
+}
+
+.close-btn:hover {
+    color: #000000;
+    opacity: 0.3;
 }
 
 .rules {
+    padding: 0;
+    margin: 10px 0;
+}
 
+.rules-text-container {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100px;
+    text-align: center;
+    color: goldenrod;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+@media  screen and (max-width: 460px) {
+    .big-container {
+        width: 80%;
+    }  
+    .rules-container {
+        width: 70%;
+    }
 }
