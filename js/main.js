@@ -1,18 +1,22 @@
-/**********For the Game**********/
-let cards = [];
-let sum = 0;
+// FOR THE GAME
+
+// Grab HTML elements
 let startEl       = document.querySelector('#start-el');
 let newcard       = document.querySelector('#new-card');
 let messageEl     = document.querySelector('#message-el');
 let cardEl        = document.querySelector('#cards-el');
 let sumEl         = document.querySelector('#sum-el');
 let prize         = document.querySelector('.prize');
+
+// Initialize game components
+let cards = [];
+let sum = 0;
 let isAlive       = false;
 let hasBlackJack  = false;
 let hasPrize = false;
 
-//Generate random cards to be summed
 
+//Generate random cards to be summed
 function getRandomCards() {
     let randomCards = Math.floor(Math.random()* 13) + 1;
     if (randomCards === 1) {
@@ -27,8 +31,8 @@ function getRandomCards() {
     
 }
 
-//Start the Game
 
+//Start the Game
 function startGame() {
     firstCard = getRandomCards();
     secondCard = getRandomCards();
@@ -41,8 +45,8 @@ function startGame() {
     renderGame();
 }
 
-//Render game based on sum
 
+//Render game based on sum
 function renderGame() {
     cardEl.textContent = "Cards: ";
     for (let i = 0; i < cards.length; i++) {
@@ -65,8 +69,8 @@ function renderGame() {
 
 }
 
-//Show prize when there's a win
 
+// Add new cards
 function newCard() {
     let newcard = getRandomCards();
 if (isAlive === true && hasBlackJack === false) {
@@ -81,23 +85,28 @@ startEl.addEventListener("click", startGame);
 newcard.addEventListener("click", newCard);
 
 
-/**********For the Game Rules**********/
 
+
+// FOR THE GAME RULES
+
+// Grab HTML elements
 let getrules = document.querySelector(".rules-text");
 let rules    = document.querySelector(".rules-container");
 let exitrules = document.querySelector(".close-btn");
 let overlay    = document.querySelector(".overlay");
 
+// Show rules
 function openRules() {
     rules.style.display = "block";
     overlay.style.display = "block";
 }
-
+// Close rules
 function closeRules() {
     rules.style.display = "none";
     overlay.style.display = "none";
 }
 
-
+//Event listeners
 getrules.addEventListener("click", openRules);
-exitrules.addEventListener("click", closeRules)
+exitrules.addEventListener("click", closeRules);
+

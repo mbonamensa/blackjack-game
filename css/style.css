@@ -1,3 +1,5 @@
+/* Root styles */
+
 * {
     padding: 0;
     margin: 0;
@@ -18,6 +20,9 @@ body {
 p {
     padding: 5px;
 }
+
+
+/* Game Container */
 .big-container {
     min-width: 200px;
     width: 350px;
@@ -31,6 +36,7 @@ p {
     font-weight: bold;
     color: #daa520;
 }
+
 .small-container {
     width: 100%;
     min-height: 320px;
@@ -46,6 +52,8 @@ p {
     margin: 20px;
 }
 
+
+/* Buttons */
 .btn-container {
     margin-top: 30px;
 }
@@ -69,11 +77,15 @@ p {
     cursor: pointer;
 }
 
+
+/* Prize */
 .prize {
     margin: 15px;
     visibility: hidden;
 }
 
+
+/* Game Rules */
 .overlay {
     display: none;
     width: 100%;
@@ -98,6 +110,7 @@ p {
 .game-rules {
     padding: 15px;
 }
+
 .close-btn {
     text-align: right;
     margin: 10px 15px 10px 0;
@@ -130,6 +143,7 @@ p {
 }
 
 
+/* Media Queries */
 @media  screen and (max-width: 460px) {
     .big-container {
         width: 80%;
